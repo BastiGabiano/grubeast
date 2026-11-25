@@ -1,0 +1,5 @@
+target/
+installer/
+build-input/
+.idea/
+*.class

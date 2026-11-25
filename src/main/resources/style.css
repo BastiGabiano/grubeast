@@ -1,0 +1,112 @@
+/* Grub East - colors and shapes taken from the Figma design */
+
+.root {
+    -fx-font-size: 15px;
+    -fx-background-color: #ededed;
+}
+
+.scroll-pane { -fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0; }
+.scroll-pane > .viewport { -fx-background-color: transparent; }
+.scroll-pane .corner { -fx-background-color: transparent; }
+
+/* ---------- header ---------- */
+.header { -fx-background-color: #d42121; }
+.avatar { -fx-background-color: #eaddff; -fx-background-radius: 100; -fx-cursor: hand; }
+.brand { -fx-text-fill: white; -fx-font-size: 42px; -fx-cursor: hand; }
+.search-box { -fx-background-color: white; -fx-background-radius: 100; -fx-padding: 0 14 0 14; }
+.search-field, .search-field:focused {
+    -fx-background-color: transparent; -fx-background-insets: 0; -fx-border-color: transparent;
+    -fx-focus-color: transparent; -fx-faint-focus-color: transparent; -fx-font-size: 14px;
+}
+.badge {
+    -fx-background-color: white; -fx-background-radius: 100; -fx-text-fill: #d42121;
+    -fx-font-size: 11px; -fx-font-weight: bold; -fx-padding: 0 5 0 5;
+}
+.icon-btn { -fx-cursor: hand; }
+
+.subnav { -fx-background-color: white; -fx-border-color: #dddddd; -fx-border-width: 0 0 1 0; }
+.link-btn {
+    -fx-background-color: transparent; -fx-text-fill: #222222; -fx-cursor: hand;
+    -fx-padding: 2 2 2 2; -fx-background-radius: 0;
+}
+.link-btn:hover { -fx-text-fill: #d42121; -fx-background-color: transparent; }
+
+.notice-warn { -fx-background-color: #fff3d6; -fx-text-fill: #7a5200; -fx-background-radius: 12; -fx-padding: 8 14 8 14; }
+.notice-bad { -fx-background-color: #fde8e8; -fx-text-fill: #8a1111; -fx-background-radius: 12; -fx-padding: 8 14 8 14; }
+
+/* ---------- panels and cards ---------- */
+.panel {
+    -fx-background-color: white; -fx-background-radius: 23;
+    -fx-border-color: rgba(0,0,0,0.10); -fx-border-radius: 23; -fx-padding: 22;
+}
+.card {
+    -fx-background-color: white; -fx-background-radius: 23;
+    -fx-border-color: #efefef; -fx-border-radius: 23; -fx-padding: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, -2, 6);
+    -fx-cursor: hand;
+}
+.card-name { -fx-font-size: 22px; -fx-font-weight: bold; }
+.card-shop { -fx-font-size: 17px; }
+.card-meta { -fx-font-size: 15px; }
+.tile-caption { -fx-background-color: linear-gradient(to bottom, transparent, rgba(0,0,0,0.78)); -fx-padding: 28 14 10 14; }
+.tile-name { -fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; }
+.tile-sub { -fx-text-fill: white; -fx-font-size: 13px; }
+.carousel-btn { -fx-background-color: #d42121; -fx-text-fill: white; -fx-background-radius: 0; -fx-font-size: 20px; -fx-cursor: hand; }
+.carousel-btn:hover { -fx-background-color: #b51a1a; }
+.placeholder { -fx-background-color: linear-gradient(to bottom right, #f7dcdc, #efb0b0); }
+.placeholder-letter { -fx-text-fill: #d42121; -fx-font-size: 54px; }
+.sold-out-overlay { -fx-background-color: rgba(0,0,0,0.45); }
+
+/* ---------- text ---------- */
+.display { -fx-font-size: 38px; }
+.title-lg { -fx-font-size: 36px; -fx-font-weight: bold; }
+.title-md { -fx-font-size: 24px; -fx-font-weight: bold; }
+.title-sm { -fx-font-size: 18px; -fx-font-weight: bold; }
+.muted { -fx-text-fill: #6b6b6b; }
+.stars { -fx-text-fill: #e0a800; }
+.price-banner {
+    -fx-background-color: #d42121; -fx-background-radius: 23; -fx-text-fill: white;
+    -fx-font-size: 34px; -fx-padding: 4 20 4 20;
+}
+.flash-ok { -fx-background-color: #e4f5e4; -fx-text-fill: #1d5e1d; -fx-background-radius: 12; -fx-padding: 8 14 8 14; }
+.flash-err { -fx-background-color: #fde8e8; -fx-text-fill: #8a1111; -fx-background-radius: 12; -fx-padding: 8 14 8 14; }
+
+/* ---------- buttons ---------- */
+.btn {
+    -fx-background-color: #d42121; -fx-text-fill: white; -fx-background-radius: 100;
+    -fx-border-color: #d42121; -fx-border-radius: 100; -fx-padding: 6 16 6 16; -fx-cursor: hand;
+}
+.btn:hover { -fx-background-color: #b51a1a; -fx-border-color: #b51a1a; }
+.btn-outline {
+    -fx-background-color: white; -fx-text-fill: #d42121; -fx-background-radius: 100;
+    -fx-border-color: #d42121; -fx-border-radius: 100; -fx-padding: 6 16 6 16; -fx-cursor: hand;
+}
+.btn-outline:hover { -fx-background-color: #fff4f4; }
+.btn-lg { -fx-font-size: 22px; -fx-background-radius: 23; -fx-border-radius: 23; -fx-padding: 12 20 12 20; }
+.btn-sm { -fx-font-size: 13px; -fx-padding: 3 12 3 12; }
+.step-btn { -fx-background-color: #d9d9d9; -fx-text-fill: white; -fx-background-radius: 0; -fx-font-size: 20px; -fx-padding: 0 8 0 8; -fx-cursor: hand; }
+.step-btn:hover { -fx-background-color: #c2c2c2; }
+.qty-label { -fx-font-size: 22px; -fx-font-weight: bold; -fx-background-color: white; -fx-border-color: #e6e6e6; -fx-alignment: center; -fx-min-width: 56; }
+
+/* ---------- inputs ---------- */
+.text-field, .password-field, .text-area, .combo-box, .date-picker {
+    -fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #cccccc;
+    -fx-background-color: white; -fx-padding: 5 8 5 8;
+}
+.text-area .content { -fx-background-color: white; -fx-background-radius: 12; }
+.text-area, .text-area .scroll-pane { -fx-background-color: white; }
+.field-label { -fx-font-weight: bold; }
+.separator-line { -fx-background-color: #e3e3e3; -fx-min-height: 1; -fx-max-height: 1; }
+
+/* ---------- dashboards ---------- */
+.sidebar { -fx-background-color: white; -fx-background-radius: 23; -fx-border-color: rgba(0,0,0,0.10); -fx-border-radius: 23; -fx-padding: 14; }
+.side-item {
+    -fx-background-color: transparent; -fx-text-fill: #222222; -fx-alignment: center-left;
+    -fx-background-radius: 14; -fx-padding: 9 14 9 14; -fx-cursor: hand; -fx-font-size: 16px;
+}
+.side-item:hover { -fx-background-color: #f3f3f3; }
+.side-item-active { -fx-background-color: #fde8e8; -fx-text-fill: #d42121; -fx-font-weight: bold; }
+.row-box { -fx-background-color: #fafafa; -fx-background-radius: 14; -fx-border-color: #e8e8e8; -fx-border-radius: 14; -fx-padding: 10; }
+.bubble-me { -fx-background-color: #d42121; -fx-text-fill: white; -fx-background-radius: 16; -fx-padding: 8 12 8 12; }
+.bubble-them { -fx-background-color: white; -fx-border-color: #cccccc; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 8 12 8 12; }
+.status-chip { -fx-background-color: #f1f1f1; -fx-background-radius: 100; -fx-padding: 2 10 2 10; -fx-font-size: 13px; }
